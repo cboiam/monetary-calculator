@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\MonetaryCalculator.Domain\MonetaryCalculator.Domain.csproj" />
+    <ProjectReference Include="..\MonetaryCalculator.Infra.Data\MonetaryCalculator.Infra.Data.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+</Project>
