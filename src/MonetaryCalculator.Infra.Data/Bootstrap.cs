@@ -17,7 +17,7 @@ namespace MonetaryCalculator.Infra.Data
                 options.UseNpgsql(configuration.GetConnectionString("default"));
             });
 
-            services.RegisterImplementationsOf(typeof(IMapper<,>)).AsScoped();
+            services.MapImplementationsOf(typeof(IMapper<,>)).AsScoped();
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
             services.AddScoped<IEmployeeQuery, EmployeeRepository>();

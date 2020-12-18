@@ -5,10 +5,11 @@ namespace MonetaryCalculator.Domain.Employees.Commands
 {
     public class RegisterVacationCommand : ICommand, IRequest<Vacation>
     {
-        public int EmployeeId { get; init; }
+        public int EmployeeId { get; private set; }
         public DateTime StartDate { get; init; }
         public DateTime EndDate { get; init; }
 
+        public void SetEmployeeId(int id) => EmployeeId = id;
         public bool IsValid()
         {
             return EmployeeId != default &&

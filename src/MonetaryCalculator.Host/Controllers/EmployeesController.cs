@@ -76,11 +76,12 @@ namespace MonetaryCalculator.Host.Controllers
             }
         }
 
-        [HttpPost("wages")]
-        public async Task<ActionResult> ChangeSalary([FromBody] ChangeSalaryCommand command)
+        [HttpPost("{id}/wages")]
+        public async Task<ActionResult> ChangeSalary(int id, [FromBody] ChangeSalaryCommand command)
         {
             try
             {
+                command.SetEmployeeId(id);
                 var result = await mediator.Send(command);
                 return Created(string.Empty, result);
             }
@@ -90,11 +91,12 @@ namespace MonetaryCalculator.Host.Controllers
             }
         }
 
-        [HttpPost("vacations")]
-        public async Task<ActionResult> RegisterVacation([FromBody] RegisterVacationCommand command)
+        [HttpPost("{id}/vacations")]
+        public async Task<ActionResult> RegisterVacation(int id, [FromBody] RegisterVacationCommand command)
         {
             try
             {
+                command.SetEmployeeId(id);
                 var result = await mediator.Send(command);
                 return Created(string.Empty, result);
             }

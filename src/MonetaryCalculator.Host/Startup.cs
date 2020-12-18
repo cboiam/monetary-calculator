@@ -23,7 +23,7 @@ namespace MonetaryCalculator.Host
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMediatR(typeof(ICommand).Assembly);
-            services.RegisterImplementationsOf(typeof(IMapper<,>)).AsScoped();
+            services.MapImplementationsOf(typeof(IMapper<,>)).AsScoped();
             services.RegisterDataDependencies(Configuration);
             services.AddControllers();
             services.AddSwaggerGen();
