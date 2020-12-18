@@ -7,6 +7,7 @@ namespace MonetaryCalculator.Domain.Employees.Commands
     {
         public int Id { get; init; }
         public DateTime LeaveDate { get; init; }
+        public LeaveCondition LeaveCondition { get; init; }
 
         public bool IsValid()
         {

@@ -1,6 +1,6 @@
 namespace MonetaryCalculator.Domain.Employees
 {
-    public enum PaymentUnit
+    public enum CountUnit
     {
         Hourly = 1,
         Daily,
