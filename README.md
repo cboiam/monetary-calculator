@@ -4,7 +4,8 @@ This is a project built to be used in trainment of testing skills of my team, we
 
 More about those calculus can be found in https://chcadvocacia.adv.br/blog/veja-como-calcular-rescisao-de-trabalho-dos-colaboradores/
 
-The tests are distributed in three layers of the bottom of the original test pyramid drawn by Martin Fowler. Follow the links for more information.
+Literatures to catch up with testing:
 
-- [Test pyramid](https://martinfowler.com/bliki/TestPyramid.html)
+- [Martin Fowler](https://martinfowler.com/tags/testing.html)
+- [Robert C. Martin](http://blog.cleancoder.com/)
 - [Test pyramid applied to .Net](https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/test-asp-net-core-mvc-apps)
